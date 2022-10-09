@@ -1,0 +1,89 @@
+.caixa_footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+}
+
+.elemento_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.na_coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.na_coluna h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.textos_footer {
+    padding-left: 2.5vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icone {
+    min-width: 5vw;
+    max-width: 5vw;
+}
+
+.textos_footer h5 {
+    font-size: clamp(0.3rem, 0.7rem + 0.3vw, 1.3rem);
+}
+
+.textos_footer p {
+    font-size: clamp(0.1rem, 0.6rem + 0.3vw, 1rem);
+}
+
+.fim_footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.fimFooterAdmin{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.fimFooter span {
+    font-size: 12px;
+}
+.fimFooter {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+@media screen and (min-width: 990px) {
+    .caixa_footer {
+        width: 100%;
+        flex-direction: row;
+    }
+    .icone {
+        min-width: 2vw;
+        max-width: 2.5vw;
+    }
+    .mapa {
+        width: 50%;
+    }
+    footer {
+        background-color: rgba(218, 129, 26, 0.1);
+    }
+}

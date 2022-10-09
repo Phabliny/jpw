@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.p {
+  text-align: justify;
+}
+
+header {
+  background-image: url("../../public/img/fundo_header.png");
+  width: auto;
+  height: auto;
+  text-align: center;
+  background-size: cover;
+}
+header h2 {
+  font-size: clamp(0.2rem, 1rem + 0.75vw, 2rem);
+}
+
+header div {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4vw;
+  padding-bottom: 4vh;
+}
+
+.confiraAqui {
+  font-weight: bold;
+  margin-top: 5vw;
+  padding: 2vw;
+  width: 100% !important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(1em, 0.5em + 2vw, 1.5em);
+  background-color: #DA811A;
+}
+
+.logozap {
+  float: right;
+  position: fixed;
+  width: clamp(1rem, 2rem + 1.75vw, 5rem);
+  margin-right: 4%;
+  margin-bottom: 11%;
+  bottom: 0;
+  right: 0;
+  clear: right;
+}
+
+.caixaheader{
+  max-width:50vw
+}
+
+@media screen and (min-width: 599px) {
+  .confiraAqui {
+    font-weight: bold;
+    margin-top: 5vh;
+    padding: 1vw;
+    width: 30vw !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: #DA811A;
+  }
+
+
+  .logozap {
+    margin-right: 3%;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .logozap {
+    margin-right: 5%;
+    margin-bottom: 2%;
+  }
+  header {
+    height: 100vh;
+  }
+}
