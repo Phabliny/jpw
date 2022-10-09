@@ -44,6 +44,10 @@ const NovoCliente = () => {
   };
 
   const enviarCliente = () => {
+    var data = {
+      nome: cliente.nome,
+      telefone: cliente.telefone.replace(/[^0-9]+/g, '')
+    };
     if (cliente.nome.length < 2) {
       swal.fire({
         title: "Algo deu errado",
@@ -58,7 +62,7 @@ const NovoCliente = () => {
         text: "Você precisa aceitar os termos e condições para envio do formulário!",
         confirmButtonColor: "#ffa600e6",
       });
-   }else if((cliente.telefone.length < 11) || (cliente.telefone.length > 12)){
+   }else if((cliente.telefone.length < 11) || (cliente.telefone.length >12)){
       swal.fire({
         title: "Algo deu errado",
         icon: "error",
